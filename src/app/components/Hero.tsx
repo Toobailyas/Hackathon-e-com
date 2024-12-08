@@ -26,8 +26,8 @@ export default function Hero() {
             <Image
               src="/Photo (3).png" // Path to your image
               alt="hero"
-              width={500} // Image width
-              height={500} // Image height
+              width={520} // Image width
+              height={584} // Image height
               className="object-cover object-right-top"
             />
           </div>
