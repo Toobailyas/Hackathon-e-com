@@ -8,7 +8,7 @@ interface CardProps {
   price: string;
 }
 
-const ContentSection = () => {
+const Card = () => {
   const cards: CardProps[] = [
     {
       image: "/Photo (3).png",
@@ -29,7 +29,48 @@ const ContentSection = () => {
       image: "/Photo@2x.png",
       title: "The Lucy Lamp",
       price: "£399"
-    }
+    },
+    {
+        image: "/p-5.jpg",
+        title: "The Dandy chair",
+        price: "£250"
+      },
+    {
+        image: "/P-6.jpg",
+        title: "Rustic Vase set",
+        price: "£155"
+      },
+      {
+        image: "/P-7.jpg",
+        title: "The Silky vase",
+        price: "£125"
+      },
+      {
+        image: "/P-8.jpg",
+        title: "The Lucy Lamp",
+        price: "£399"
+      },
+      {
+        image: "/Photo@2x.png",
+        title: "The Lucy Lamp",
+        price: "£399"
+      },
+      {
+        image: "/Photo (3).png",
+        title: "The Dandy chair",
+        price: "£250"
+      },
+      {
+        image: "/Photo (2).png",
+        title: "Rustic vase set",
+        price: "£155"
+      },
+      {
+        image: "/Photo (1).png",
+        title: "The Silky vase",
+        price: "£125"
+      },
+    
   ];
 
   return (
@@ -44,6 +85,7 @@ const ContentSection = () => {
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
           {cards.map((card, index) => (
             <div key={index} className="p-4 md:w-1/4 sm:mb-0 mb-6">
+                  <Link href="../s-cart" >
               <div className="rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <Image
                   alt={card.title}
@@ -57,21 +99,20 @@ const ContentSection = () => {
                   <p className="text-base leading-relaxed mt-2">{card.price}</p>
                 </div>
               </div>
+              </Link>
             </div>
           ))}
         </div>
 
         {/* Centering the Button */}
         <div className="flex justify-center mt-6">
-          <Link href="../p-listing" >
           <button className="text-gray-700 bg-[#F9F9F9] border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
             View Collections
           </button>
-          </Link>
         </div>
       </div>
     </section>
   );
 };
 
-export default ContentSection;
+export default Card;

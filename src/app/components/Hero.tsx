@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -8,12 +9,14 @@ export default function Hero() {
           {/* Left Column: Text */}
           <div className="lg:w-1/2 w-full flex flex-col p-14 justify-between">
             <div className="mb-6">
-              <h3 className="font-clash text-[32px] font-normal leading-[44.8px] sm:text-3xl text-3xl mb-4">
+              <h3 className=" sm:text-3xl text-3xl mb-4 font-[ClashDisplay] text-[32px] font-normal leading-[44.8px]">
                 The furniture brand for the future, with timeless designs
               </h3>
+              <Link href="../p-listing" >
               <button className="bg-[#F9F9F926] text-white py-2 px-6 hover:bg-indigo-700 transition-all duration-200">
                 View Collection
               </button>
+              </Link>
             </div>
 
             <p className="text-lg lg:mt-9  align-bottom">

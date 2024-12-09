@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="  font-[family-name:var(--font-geist-sans)]">
@@ -13,7 +14,9 @@ export default function Home() {
       <br/>
       Handmade, and lovingly crafted furniture and homeware is what we live, breathe and design so our Chelsea boutique become the hotbed for the London interior design community.</p>
       <div className="flex justify-center">
+      <Link href="../about" >
         <button className="ml-4 inline-flex text-gray-700 bg-[#F9F9F9] border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Get in touch</button>
+      </Link>
       </div>
     </div>
     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

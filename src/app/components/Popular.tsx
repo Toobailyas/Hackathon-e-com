@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import Link from 'next/link';
 const Popular = () => {
   return (
     <section className="text-gray-600 font-[Santosh] body-font">
@@ -67,9 +67,11 @@ const Popular = () => {
 
         {/* Centering the button */}
         <div className="flex justify-center mt-6">
+        <Link href="../p-listing" >
           <button className="text-gray-700 bg-[#F9F9F9] border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
             View Collections
           </button>
+          </Link>
         </div>
 
       </div>

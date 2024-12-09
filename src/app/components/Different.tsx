@@ -1,16 +1,16 @@
-import Image from "next/image";
+
 
 const BlogSection = () => {
   return (
     <section className="text-gray-600 font-[Santoshi] body-font">
       <div className="container px-5 py-8 mx-auto">
       <h2 className="font-[Santoshi] title-font sm:text-3xl text-3xl mb-9 font-medium text-gray-900 m-2 flex justify-center align-top">What makes our brand different</h2>
-        <div className="flex flex-wrap -mx-4 -my-8">
+        <div className="flex flex-wrap mx-2 my-8">
           
           {/* First Blog Item */}
-          <div className="py-8 px-4 lg:w-1/4">
+          <div className="py-4 px-2 lg:w-1/4 bg-[#F9F9F9]">
             <div className="h-full flex items-start">
-              <div className="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+              <div className="w-8 flex-shrink-0 flex flex-col text-center leading-none">
               </div>
               <div className="flex-grow pl-6">
                 <h2 className="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1"><svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +26,7 @@ const BlogSection = () => {
           </div>
 
           {/* Second Blog Item */}
-          <div className="py-8 px-4 lg:w-1/4">
+          <div className="py-4 px-2 lg:w-1/4 bg-[#F9F9F9]">
             <div className="h-full flex items-start">
               <div className="w-12 flex-shrink-0 flex flex-col text-center leading-none">
               </div>
@@ -44,9 +44,9 @@ const BlogSection = () => {
             </div>
           </div>
 
-          <div className="py-8 px-4 lg:w-1/4">
+          <div className="py-4 px-1 lg:w-1/4 bg-[#F9F9F9]">
             <div className="h-full flex items-start">
-              <div className="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+              <div className="w-10 flex-shrink-0 flex flex-col text-center leading-none">
               </div>
               <div className="flex-grow pl-6">
                 <h2 className="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">
@@ -63,9 +63,9 @@ const BlogSection = () => {
           </div>
 
           {/* Third Blog Item */}
-          <div className="py-8 px-4 lg:w-1/4">
+          <div className="py-4 px-2 lg:w-1/4 bg-[#F9F9F9]">
             <div className="h-full flex items-start">
-              <div className="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+              <div className="w-8 flex-shrink-0 flex flex-col text-center leading-none">
               </div>
               <div className="flex-grow pl-6">
                 <h2 className="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">
