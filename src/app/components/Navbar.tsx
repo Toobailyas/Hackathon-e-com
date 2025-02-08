@@ -24,7 +24,7 @@ const Navbar = () => {
         {/* Search Icon Outside Burger Menu */}
        
         <div className="flex items-center space-x-4">
-        <Link href="../s-cart">
+        <Link href="../cart">
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7.5 21.5C8.32843 21.5 9 20.8285 9 20C9 19.1716 8.32843 18.5 7.5 18.5C6.67157 18.5 6 19.1716 6 20C6 20.8285 6.67157 21.5 7.5 21.5Z" fill="#2A254B"/>
             <path d="M18 21.5C18.8284 21.5 19.5 20.8285 19.5 20C19.5 19.1716 18.8284 18.5 18 18.5C17.1716 18.5 16.5 19.1716 16.5 20C16.5 20.8285 17.1716 21.5 18 21.5Z" fill="#2A254B"/>

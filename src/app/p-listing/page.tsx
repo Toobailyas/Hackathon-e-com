@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
+import Newproducts from "../components/Newproducts";
 
 const page = () => {
   return (
@@ -104,7 +105,17 @@ const page = () => {
           </button>
         </div>
       </div>
-      <Card />
+      <div className="flex flex-col mb-12">
+          <h1 className="sm:w-2/5 mx-20 text-gray-900 font-medium title-font text-2xl my-2 sm:mb-0">
+            Our Products
+          </h1>
+        </div>
+      <Newproducts />
+      <div className="flex justify-center my-6">
+          <button className="text-gray-700 bg-[#F9F9F9] border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+            View Collections
+          </button>
+        </div>
     </div>
   );
 };

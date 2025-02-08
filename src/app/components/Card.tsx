@@ -85,7 +85,7 @@ const Card = () => {
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
           {cards.map((card, index) => (
             <div key={index} className="p-4 md:w-1/4 sm:mb-0 mb-6">
-                  <Link href="../s-cart" >
+                  <Link href="../cart" >
               <div className="rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <Image
                   alt={card.title}
@@ -105,11 +105,13 @@ const Card = () => {
         </div>
 
         {/* Centering the Button */}
+        <Link href="../products">
         <div className="flex justify-center mt-6">
           <button className="text-gray-700 bg-[#F9F9F9] border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
             View Collections
           </button>
         </div>
+        </Link>
       </div>
     </section>
   );

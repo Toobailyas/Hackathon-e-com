@@ -4,6 +4,14 @@ import "./globals.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs'
+import './globals.css'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,6 +35,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider>
+      {/* <SignInButton>Sign In</SignInButton> */}
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -37,5 +47,7 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
+    
+    </ClerkProvider>
   );
 }
